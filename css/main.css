@@ -1,0 +1,237 @@
+:root{
+    --color-primary: #216E48;
+    --color-primary-dark: #174B32;
+    --color-secondary: #E4F1E7;
+    --color-beige: #F5F5DC;
+    --color-background: #FCFCF8;
+    --color-white: #FFFFFF;
+    --color-text: #252D27;
+    --color-muted: #647067;
+    --color-border: #DCE5DC;
+    --color-danger: #B42318;
+    --color-success: #218044;
+
+    --font-main: Arial, Helvetica, sans-serif;
+
+    --radius-small: 8px;
+    --radius-medium: 14px;
+    --radius-large: 22px;
+
+    --shadow-card: 0 5px 18px rgba(25, 65, 40, 0.08);
+}
+/*Reset*/
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+font-family: var(--font-main);
+background: var(--color-background);
+color: var(--color-text);
+line-height: 1.6;
+min-width: 320px;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+a{
+    text-decoration:none;
+    color: inherit
+}
+
+button,a{
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible
+{outline: 3px solid #75B98B;
+    outline-offset: 3px;
+}
+h1,h2,h3{
+    line-height:1.2;
+    font-weight:700;
+}
+
+p{
+    color:var(--color-muted);
+}
+ul {
+    list-style: none;
+}
+
+::selection {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+
+
+/* =========================================
+   ECOMARKET - SOBRE NOSOTROS
+   Estilos generales y paleta original
+   ========================================= */
+
+.about-page {
+    margin: 0;
+    color: var(--color-text, #252D27);
+    background-color: var(--color-background, #FCFCF8);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.about-page *,
+.about-page *::before,
+.about-page *::after {
+    box-sizing: border-box;
+}
+
+.about-page img {
+    display: block;
+    max-width: 100%;
+}
+
+.about-page a {
+    text-decoration: none;
+}
+
+.about-container {
+    width: min(1100px, 90%);
+    margin-inline: auto;
+}
+
+.about-page .about-eyebrow {
+    margin: 0 0 12px;
+    color: var(--color-primary, #216E48);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.about-page h1,
+.about-page h2,
+.about-page h3,
+.about-page p {
+    overflow-wrap: break-word;
+}
+
+/* Estilos principales de Contacto */
+
+.contact-main {
+    color: #252D27;
+    background-color: #FCFCF8;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.contact-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-hero {
+    padding: 55px 20px;
+    text-align: center;
+    background-color: #E4F1E7;
+}
+
+.contact-hero h1 {
+    color: #174B32;
+    font-size: 3rem;
+}
+
+.contact-section {
+    padding: 55px 0;
+}
+
+.contact-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 19px;
+}
+
+.contact-field label {
+    color: #174B32;
+    font-weight: 600;
+}
+
+.contact-field select,
+.contact-field textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #DCE5DC;
+    border-radius: 7px;
+    background-color: #FCFCF8;
+    color: #252D27;
+    font: inherit;
+}
+
+.contact-field textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.contact-field select:focus,
+.contact-field textarea:focus {
+    outline: 2px solid #216E48;
+    outline-offset: 2px;
+}
+
+/* Campos del formulario */
+
+.contact-field input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #DCE5DC;
+    border-radius: 7px;
+    background-color: #FCFCF8;
+    color: #252D27;
+    font: inherit;
+}
+
+/* Cuando el usuario selecciona un campo */
+
+.contact-field input:focus,
+.contact-field select:focus,
+.contact-field textarea:focus {
+    outline: 2px solid #216E48;
+    outline-offset: 2px;
+}
+
+/* Botón para enviar */
+
+.contact-submit {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #216E48;
+    color: #FFFFFF;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Efecto al pasar el ratón */
+
+.contact-submit:hover {
+    background-color: #174B32;
+}

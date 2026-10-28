@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora el catálogo de productos sostenibles de EcoMarket.">
+    <title>Productos | EcoMarket</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="logo" href="../index.html" aria-label="EcoMarket, inicio">
+                <span class="logo-icon" aria-hidden="true">♻</span>
+                <span>EcoMarket</span>
+            </a>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a class="nav-link" href="../index.html">Inicio</a>
+                <a class="nav-link active" href="../views/productos.html" aria-current="page">Productos</a>
+                <a class="nav-link" href="../views/sobre_nosotros.html">Nosotros</a>
+                <a class="nav-link" href="../views/contacto.html">Contacto</a>
+            </nav>
+            <div class="header-actions">
+                <a class="header-action" href="productos.html#buscador" aria-label="Buscar productos" title="Buscar productos"><span aria-hidden="true">⌕</span></a>
+                <a class="header-action" href="productos.html#catalogo" aria-label="Ver catálogo" title="Ver catálogo"><span aria-hidden="true">🛒</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="catalogo">
+            <h1>Nuestro catálogo</h1>
+            <p>Encuentra productos sostenibles para tu día a día.</p>
+            <form class="buscador" id="buscador" action="#" method="get">
+                <label for="buscar-producto">Buscar productos</label>
+                <input type="search" id="buscar-producto" name="buscar" placeholder="Ej. botella reutilizable">
+                <button type="submit">Buscar Productos</button>
+            </form>
+
+            <div class="catalogo-contenido">
+                <aside class="filtros">
+                    <h2>Filtrar productos</h2>
+                    <fieldset>
+                        <legend>Categorías</legend>
+                        <label><input type="checkbox" name="categoria" value="hogar"> Hogar</label>
+                        <label><input type="checkbox" name="categoria" value="moda"> Moda</label>
+                        <label><input type="checkbox" name="categoria" value="cuidado-personal"> Cuidado personal</label>
+                        <label><input type="checkbox" name="categoria" value="alimentos"> Alimentos</label>
+                        <label><input type="checkbox" name="categoria" value="papeleria"> Papelería</label>
+                        <label><input type="checkbox" name="categoria" value="jardineria"> Jardinería</label>
+                        <label><input type="checkbox" name="categoria" value="limpieza"> Limpieza</label>
+                        <label><input type="checkbox" name="categoria" value="cocina"> Cocina</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Precio</legend>
+                        <label for="precio-minimo">Precio mínimo</label>
+                        <input type="number" id="precio-minimo" name="precio-minimo" min="0" placeholder="0">
+                        <label for="precio-maximo">Precio máximo</label>
+                        <input type="number" id="precio-maximo" name="precio-maximo" min="0" placeholder="100000">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Disponibilidad</legend>
+                        <label><input type="checkbox" name="disponibilidad" value="disponible"> Disponible</label>
+                    </fieldset>
+                </aside>
+
+                <section class="productos" id="catalogo">
+                    <h2>Todos los productos</h2>
+                    <div class="product-grid">
+                        <article class="product-card" id="botella">
+                            <img class="product-image" src="../img/products/botella.jpg" alt="Botella reutilizable" loading="lazy">
+                            <div class="product-info"><span class="product-category">Hogar</span><h3>Botella reutilizable</h3><p class="product-price">$25.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#botella">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="bolsa">
+                            <img class="product-image" src="../img/products/bolsa.jpg" alt="Bolsa reutilizable para compras" loading="lazy">
+                            <div class="product-info"><span class="product-category">Hogar</span><h3>Bolsa reutilizable</h3><p class="product-price">$12.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#bolsa">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="cepillo">
+                            <img class="product-image" src="../img/products/cepillo.jpg" alt="Cepillo dental de bambú" loading="lazy">
+                            <div class="product-info"><span class="product-category">Cuidado personal</span><h3>Cepillo de bambú</h3><p class="product-price">$8.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#cepillo">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="jabon">
+                            <img class="product-image" src="../img/products/Jabónartesanalnatural.jpg" alt="Jabón artesanal natural" loading="lazy">
+                            <div class="product-info"><span class="product-category">Cuidado personal</span><h3>Jabón artesanal natural</h3><div class="product-prices">
+    <p class="product-old-price">$11.000</p>
+    <p class="product-discount">$8.800</p>
+</div>
+                            <p class="product-availability">Disponible</p><a class="btn btn-primary" href="#jabon">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="cuaderno">
+                            <img class="product-image" src="../img/products/Cuaderno de papel reciclado.jpg" alt="Cuaderno de papel reciclado" loading="lazy">
+                            <div class="product-info"><span class="product-category">Papelería</span><h3>Cuaderno de papel reciclado</h3><p class="product-price">$14.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#cuaderno">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="esponja">
+                            <img class="product-image" src="../img/products/Esponja vegetal.jpg" alt="Esponja vegetal" loading="lazy">
+                            <div class="product-info"><span class="product-category">Cuidado personal</span><h3>Esponja vegetal</h3><p class="product-price">$7.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#esponja">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="pitillos">
+                            <img class="product-image" src="../img/products/Pitillos reutilizables.jpg" alt="Pitillos reutilizables" loading="lazy">
+                            <div class="product-info"><span class="product-category">Hogar</span><h3>Pitillos reutilizables</h3><p class="product-price">$9.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#pitillos">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="bolsas-silicona">
+                            <img class="product-image" src="../img/products/Bolsas de silicona reutilizables.jpg" alt="Bolsas de silicona reutilizables" loading="lazy">
+                            <div class="product-info"><span class="product-category">Cocina</span><h3>Bolsas de silicona reutilizables</h3><p class="product-price">$22.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#bolsas-silicona">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="jabonera">
+                            <img class="product-image" src="../img/products/Jabonera de bambú.jpg" alt="Jabonera de bambú" loading="lazy">
+                            <div class="product-info"><span class="product-category">Cuidado personal</span><h3>Jabonera de bambú</h3><p class="product-price">$11.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#jabonera">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="cubiertos">
+                            <img class="product-image" src="../img/products/cubiertos.jpg" alt="Cubiertos de bambú" loading="lazy">
+                            <div class="product-info"><span class="product-category">Hogar</span><h3>Cubiertos de bambú</h3><p class="product-price">$16.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#cubiertos">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="bolsas-malla">
+                            <img class="product-image" src="../img/products/Bolsas de malla para frutas.jpg" alt="Bolsas de malla para frutas" loading="lazy">
+                            <div class="product-info"><span class="product-category">Hogar</span><h3>Bolsas de malla para frutas</h3><p class="product-price">$16.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#bolsas-malla">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="vaso">
+                            <img class="product-image" src="../img/products/vaso.jpg" alt="Vaso reutilizable para café" loading="lazy">
+                            <div class="product-info"><span class="product-category">Hogar</span><h3>Vaso reutilizable para café</h3><p class="product-price">$19.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#vaso">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="kit-hierbas">
+                            <img class="product-image" src="../img/products/Kit de hierbas aromáticas.jpg" alt="Kit de hierbas aromáticas" loading="lazy">
+                            <div class="product-info"><span class="product-category">Jardinería</span><h3>Kit de hierbas aromáticas</h3><p class="product-price">$24.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#kit-hierbas">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="papel">
+                            <img class="product-image" src="../img/products/Papel de regalo reciclado.jpg" alt="Papel de regalo reciclado" loading="lazy">
+                            <div class="product-info"><span class="product-category">Papelería</span><h3>Papel de regalo reciclado</h3><p class="product-price">$8.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#papel">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="estropajo">
+                            <img class="product-image" src="../img/products/Estropajo de fibra de coco.jpg" alt="Estropajo de fibra de coco" loading="lazy">
+                            <div class="product-info"><span class="product-category">Limpieza</span><h3>Estropajo de fibra de coco</h3><p class="product-price">$6.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#estropajo">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="discos">
+                            <img class="product-image" src="../img/products/Discos desmaquillantes reutilizables.jpg" alt="Discos desmaquillantes reutilizables" loading="lazy">
+                            <div class="product-info"><span class="product-category">Cuidado personal</span><h3>Discos desmaquillantes reutilizables</h3><p class="product-price">$13.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#discos">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="PlantaSuculenta">
+                            <img class="product-image" src="../img/products/PlantaSuculenta.jpg" alt="Planta Suculenta" loading="lazy">
+                            <div class="product-info"><span class="product-category">Jardinería</span><h3>Planta suculenta</h3><p class="product-price">$15.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#PlantaSuculenta">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="envolturas">
+                            <img class="product-image" src="../img/products/envolturas.jpg" alt="Envolturas reutilizables para alimentos" loading="lazy">
+                            <div class="product-info"><span class="product-category">Cocina</span><h3>Envolturas reutilizables para alimentos</h3><p class="product-price">$20.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#envolturas">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="cepillo-cabello">
+                            <img class="product-image" src="../img/products/Cepillo para el cabello de madera.jpg" alt="Cepillo para el cabello de madera" loading="lazy">
+                            <div class="product-info"><span class="product-category">Cuidado personal</span><h3>Cepillo para el cabello de madera</h3><p class="product-price">$17.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#cepillo-cabello">Ver detalles</a></div>
+                        </article>
+                        <article class="product-card" id="recipiente-almuerzo">
+                            <img class="product-image" src="../img/products/Recipiente reutilizable para almuerzo.jpg" alt="Recipiente reutilizable para almuerzo" loading="lazy">
+                            <div class="product-info"><span class="product-category">Cocina</span><h3>Recipiente reutilizable para almuerzo</h3><p class="product-price">$28.000</p><p class="product-availability">Disponible</p><a class="btn btn-primary" href="#recipiente-almuerzo">Ver detalles</a></div>
+                        </article>    
+                    </div>
+
+                    <nav class="paginacion" aria-label="Paginación del catálogo">
+                        <a href="#catalogo">Anterior</a>
+                        <a href="#catalogo" aria-current="page">1</a>
+                        <a href="#catalogo">2</a>
+                        <a href="#catalogo">3</a>
+                        <a href="#catalogo">Siguiente</a>
+                    </nav>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a class="logo footer-logo" href="../index.html">
+                    <span class="logo-icon" aria-hidden="true">♻</span>
+                    <span>EcoMarket</span>
+                </a>
+                <p>Alternativas reutilizables para un estilo de vida más consciente.</p>
+            </div>
+            <div class="footer-column">
+                <h2>Explora</h2>
+                <a href="../index.html">Inicio</a>
+                <a href="../views/productos.html">Productos</a>
+                <a href="../views/sobre_nosotros.html">Nosotros</a>
+            </div>
+            <div class="footer-column">
+                <h2>Ayuda</h2>
+                <a href="../views/contacto.html">Contacto</a>
+                <a href="../views/contacto.html#formulario">Escríbenos</a>
+            </div>
+            <div class="footer-column">
+                <h2>Contacto</h2>
+                <a href="mailto:contacto@ecomarket.com">contacto@ecomarket.com</a>
+                <p>Atención a nuestros visitantes</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 EcoMarket. Proyecto académico.</p>
+            <p>Consumo consciente, decisiones responsables.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
